@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -66,12 +67,18 @@ const Home = () => {
             Basically, a student management system offers a 360-degree view of
             students. And this helps monitor, track and improve the educational
             performance and several other aspects of students.
+            <div className="text-center mt-3">
+              <h6 className="text-success">ENTER HERE</h6>
+              <Link to={"/students"} className="btn btn-success">
+                STUDENT MANAGER
+              </Link>
+            </div>
           </p>
           <div className="container">
             <div className="row">
               <div className="col-4"></div>
-              <div className="col-4">
-                <h3 className="text-primary">PARTNER WITH</h3>
+              <div className="col-4 text-center">
+                <h3 className="text-primary text-center">PARTNER WITH</h3>
                 <img
                   src="https://media.licdn.com/dms/image/v2/D4D0BAQFd1PJLSfgSpA/company-logo_200_200/company-logo_200_200/0/1712842114675/the_student_funding_company_logo?e=2147483647&v=beta&t=Kn1Ao9pw05bcP-gaNf6v9DQZSK1G_74feugIfq2XZ7k"
                   alt=""
