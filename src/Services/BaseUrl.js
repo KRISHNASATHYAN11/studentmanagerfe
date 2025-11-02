@@ -1,0 +1,1 @@
+export const BaseUrl = "https://studentmanagerbe.onrender.com"
