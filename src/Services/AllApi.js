@@ -2,7 +2,7 @@ import { BaseUrl } from "./BaseUrl";
 import commonApi from "./commonApi";
 
 export const getStudent = async () => {
-  return await commonApi("get", `${BaseUrl}/students`);
+  return await commonApi("get", `${BaseUrl}/students`, "");
 };
 
 export const createStudent = async (studentData) => {
@@ -10,7 +10,7 @@ export const createStudent = async (studentData) => {
 };
 
 export const deleteStudent = async (id) => {
-  return await commonApi("delete", `${BaseUrl}/students/${id}`);
+  return await commonApi("delete", `${BaseUrl}/students/${id}`, {});
 };
 
 export const editStudent = async (id, studentData) => {
